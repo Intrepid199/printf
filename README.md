@@ -1,2 +1,1 @@
-# printf
-This is the repo for the team project
+printf team project
