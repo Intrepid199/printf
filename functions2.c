@@ -47,7 +47,7 @@ int print_pointer(va_list types, char buffer[], int flags, int width, int precis
 
 	ind++;
 
-	return (write_pointyer(buffer, ind, length, width, flags, padd, extra_c, padd_start));
+	return (write_pointer(buffer, ind, length, width, flags, padd, extra_c, padd_start));
 }
 
 /**
@@ -120,7 +120,7 @@ int print_reverse(va_list types, char buffer[], int flags, int width, int precis
 	for (i = 0; str[i], i++)
 		;
 
-	for (i = i - i; i >= 0; i--)
+	for (i = i - 1; i >= 0; i--)
 	{
 		char z = str[i];
 
@@ -159,7 +159,7 @@ int print_rot13string(va_list types, char buffer[], int flags, int width, int pr
 	if (str == NULL)
 		str = "(AHYY)";
 
-	for (i  0; str[i]; i++)
+	for (i = 0; str[i]; i++)
 	{
 		for (j = 0; in[j]; j++)
 		{
