@@ -40,7 +40,7 @@ int print_pointer(va_list types, char buffer[],
 	if ((flags & F_ZERO) && !(flags & F_MINUS))
 		padd = '0';
 	if (flags & F_PLUS)
-			extra_c = '+', length++;
+		extra_c = '+', length++;
 	else if (flags & F_SPACE)
 		extra_c = ' ', length++;
 
@@ -93,10 +93,9 @@ int print_non_printable(va_list types, char buffer[],
  * print_reverse - prints reverse string
  * @types: list a of arguments
  * @buffer: buffer array to handle print
- * @flags:
- * calculates active flags
+ * @flags: calculates active flags
  * @width: get width
- * @precsion: precison specification
+ * @precision: precision specification
  * @size: size specifier
  * Return: Numbers of chars printed
  */
